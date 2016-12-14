@@ -33,7 +33,8 @@ var OAuthService = (function () {
             }
             var response_type = "token";
             if (that.oidc) {
-                response_type = "id_token+token";
+                //response_type = "id_token+token";
+                response_type = "token id_token";
             }
             var url = that.loginUrl
                 + "?response_type="
